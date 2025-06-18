@@ -343,8 +343,6 @@ class BrowserModPopup extends LitElement {
         --vertical-align-dialog: flex-start;
         --dialog-surface-margin-top: 40px;
         --dialog-content-padding: 0;
-
-        --ha-dialog-border-radius: var(--popup-border-radius, 28px);
         --padding-x: var(--popup-padding-x, 24px);
         --padding-y: var(--popup-padding-y, 20px);
       }
@@ -415,11 +413,8 @@ class BrowserModPopup extends LitElement {
       :host([fullscreen]) ha-dialog {
         --mdc-dialog-min-width: 100vw;
         --mdc-dialog-max-width: 100vw;
-        --mdc-dialog-min-height: 100%;
-        --mdc-dialog-max-height: 100%;
         --mdc-shape-medium: 0px;
-        --vertical-align-dialog: flex-end;
-        --ha-dialog-border-radius: 0px;
+	--vertical-align-dialog: flex-start;
         --dialog-surface-margin-top: 0px;
       }
       :host([fullscreen]) .content {
@@ -434,7 +429,6 @@ class BrowserModPopup extends LitElement {
           --mdc-dialog-min-width: 97vw;
           --mdc-dialog-max-width: 97vw;
           --vertical-align-dialog: flex-start;
-          --ha-dialog-border-radius: var(--popup-border-radius, 28px);
         }
         :host([wide]) .content {
           width: 100vw;
