@@ -358,9 +358,11 @@ class BrowserModPopup extends LitElement {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-focus-ring-color: rgba(0, 0, 0, 0);
         outline: none !important;
+	border: none;
       }
       :host([card]) .content .container {
         padding: 8px 8px 20px 8px;
+	border: none;
       }
       .content .buttons {
         box-sizing: border-box;
