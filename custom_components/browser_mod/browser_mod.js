@@ -159,9 +159,7 @@ const e="undefined"!=typeof globalThis&&globalThis||"undefined"!=typeof self&&se
         --padding-y: var(--popup-padding-y, 20px);
       }
       .content {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-focus-ring-color: rgba(0, 0, 0, 0);
-        outline: none !important;
+        outline: none;
       }
       .content .container {
         padding: 8px 24px 20px 24px;
